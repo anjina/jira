@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "lint-staged"
   },
   "eslintConfig": {
     "extends": [
@@ -43,14 +44,9 @@
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.1.0",
-    "husky": "^4.3.8",
+    "husky": "^5.1.3",
     "lint-staged": "^10.5.4",
     "prettier": "2.2.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{js,css,md,ts,tsx}": "prettier --write"
